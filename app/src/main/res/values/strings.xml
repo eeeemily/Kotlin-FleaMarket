@@ -1,14 +1,113 @@
 <resources>
-    <string name="app_name">Kotlin-FleaMarket</string>
+    <string name="app_name">Vanilla Vinyl</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
+<!--    <string name="welcome">"Welcome !"</string>-->
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Fragment Names in Nav Controller-->
+    <string name="info_frag_textview">Info</string>
+    <string name="display_frag_textview">CD Collections</string>
+    <string name="data_entry_frag_textview">Add An Product</string>
+    <string name="web_view_frag_textview">Product Browswer</string>
+    <string name="dialog_frag_textview">Config</string>
+    <string name="settings">Settings</string> <!-- also used in main_menu-->
+    <!--Fragment Specific Strings-->
+    <string name="home_welcome">Organize All Your Products Here!</string>
+    <string name="main_start_btn">View Your Product Collection</string>
+    <string name="main_web_view_btn">Browse Product Online</string>
+    <!--webview-->
+    <string name="go">Go</string>
+
+
+    <string-array name="effects">
+        <item>Crop Square</item>
+        <item>Crop Circle</item>
+        <item>Blur</item>
+        <item>Pixelation</item>
+        <item>Invert</item>
+        <item>Rounded Corners</item>
+    </string-array>
+
+    <string-array name="effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="effect">Effect</string>
+    <string name="show_message">Show Message at Start</string>
+    <string name="hide_comment">Hide Comment</string>
+    <string name="message_body">Introducing your digital product collections!</string>
+    <string name="welcome">Vanilla Vinyl</string>
+
+    <!--    btns-->
+    <string name="add_product">Add</string>
+    <string name="remove_product">Delete</string>
+
+    <string name="button_add">Add</string>
+    <string name="button_cancel">Cancel</string>
+
+    <string name="your_product_list">Your Products</string>
+    <!--toaster-->
+    <string name="not_select_any_product_to_delete">You have not select any product!</string>
+    <string name="deleted_colon">Deleted: %s</string>
+    <string name="keep_colon">%s is still in your collection!</string>
+
+    <string name="info_copy_right">Copyright &#169; 2021, EZ Corp</string>
+
+    <!--    Details Fragment-->
+    <string name="details_hint_product_name">Product Name: </string>
+    <string name="details_hint_artist">Artist: </string>
+    <string name="details_hint_cover_link">Cover Art Url: </string>
+    <string name="details_hint_released">Released: </string>
+    <string name="details_hint_comment">Comment: </string>
+    <string name="details_product_name">Product Name: %s</string>
+    <string name="details_artist">Artist: %s</string>
+    <string name="details_cover_link">Cover Art Url: %s</string>
+    <string name="details_released">Released: %s</string>
+    <string name="details_comment">Comment: %s</string>
+
+    <string name="unselect_first">Unselect or delete the selected Product first!</string>
+    <string name="did_not_add">You did not add a product…</string>
+
+
+    <!--Recycler View-->
+    <string name="recycler_product">Product Name: </string>
+    <string name="recycler_artist">Artist: </string>
+    <string name="recycler_released">Released: </string>
+    <string name="recycler_comment">Comment: </string>
+    <!--    menu-->
+    <string name="done">Done</string>
+
+    <!--    array-->
+    <string name="edit_profile">Edit Your User Profile</string>
+    <string name="fav_season">favorite season?</string>
+    <string name="user_name">Enter your username</string>
+    <string name="hint_user_name">Enter username here…</string>
+    <!--    <string name="mascot">fav UofR mascot</string>-->
+
+    <string-array name="seasonArray">
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Fall</item>
+        <item>Winter</item>
+    </string-array>
+
+
+    <!--    Alert-->
+    <string name="ok">OK</string>
+    <string name="alert">Attention</string>
+    <string name="product_deleted_alert">Are you absolutely sure you want to delete %s?  :(</string>
+    <string name="yes">Delete</string>
+    <string name="no">Keep it!</string>
+    <string name="reset">Reset</string>
+
 </resources>

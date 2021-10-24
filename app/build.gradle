@@ -75,4 +75,12 @@ dependencies {
 
     // Preferences
     implementation "androidx.preference:preference-ktx:1.1.1"
+    // Picasso
+    def picassoVersion = "2.71828"
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+
+    // A couple of picasso transformations
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+    // GPU Filters
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
 }

@@ -9,7 +9,11 @@
         android:id="@+id/loginFragment"
         android:name="com.mzheng9.kotlin_fleamarket.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_productDisplayFragment"
+            app:destination="@id/productDisplayFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.mzheng9.kotlin_fleamarket.HomeFragment"
@@ -18,5 +22,24 @@
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDisplayFragment"
+        android:name="com.mzheng9.kotlin_fleamarket.ui.ProductDisplayFragment"
+        android:label="ProductDisplayFragment" >
+        <action
+            android:id="@+id/action_productDisplayFragment_to_dataEntryFragment"
+            app:destination="@id/dataEntryFragment" />
+        <action
+            android:id="@+id/action_productDisplayFragment_self"
+            app:destination="@id/productDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataEntryFragment"
+        android:name="com.mzheng9.kotlin_fleamarket.ui.DataEntryFragment"
+        android:label="DataEntryFragment" >
+        <action
+            android:id="@+id/action_dataEntryFragment_to_productDisplayFragment"
+            app:destination="@id/productDisplayFragment" />
     </fragment>
 </navigation>

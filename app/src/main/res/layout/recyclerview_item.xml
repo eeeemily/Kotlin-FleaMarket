@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_item_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="WebViewLayout">
+
+    <TextView
+        android:id="@+id/item_textView"
+        style="@style/text_view_style"
+        android:layout_width="333dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/product_cell_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="280dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/item_textView"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/item_textView"
+        app:layout_constraintTop_toTopOf="@+id/item_textView">
+
+        <ImageView
+            android:id="@+id/product_imageview"
+            android:layout_width="274dp"
+            android:layout_height="285dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/product_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recycler_product"
+        style="@style/text_view_style"
+        app:layout_constraintBottom_toTopOf="@+id/artist_textview"
+        app:layout_constraintEnd_toEndOf="@+id/item_textView"
+        app:layout_constraintStart_toStartOf="@+id/item_textView" />
+
+    <TextView
+        android:id="@+id/released_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recycler_released"
+        style="@style/text_view_style"
+        app:layout_constraintBottom_toTopOf="@+id/comment_textview"
+        app:layout_constraintEnd_toEndOf="@+id/item_textView"
+        app:layout_constraintStart_toStartOf="@+id/item_textView" />
+
+    <TextView
+        android:id="@+id/comment_textview"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/recycler_comment"
+        app:layout_constraintBottom_toBottomOf="@+id/item_textView"
+        app:layout_constraintEnd_toEndOf="@+id/item_textView"
+        app:layout_constraintStart_toStartOf="@+id/item_textView" />
+
+    <TextView
+        android:id="@+id/artist_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recycler_artist"
+        style="@style/text_view_style"
+        app:layout_constraintBottom_toTopOf="@+id/released_textview"
+        app:layout_constraintEnd_toEndOf="@+id/item_textView"
+        app:layout_constraintStart_toStartOf="@+id/item_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
