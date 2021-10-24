@@ -1,8 +1,11 @@
 package com.mzheng9.kotlin_fleamarket.database
+
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
+@Dao
 interface ProductDao {
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(product: Product)
 

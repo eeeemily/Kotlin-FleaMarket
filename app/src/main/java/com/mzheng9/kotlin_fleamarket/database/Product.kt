@@ -6,8 +6,7 @@ import androidx.room.PrimaryKey
 import java.util.*
 
 @Entity(tableName = "product_table")
-data class Product{
-
+data class Product(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "product_ID")
     var productID: Long = 0L,
@@ -26,4 +25,4 @@ data class Product{
 
     @ColumnInfo(name = "product_description")
     var productDescription: String = ""
-}
+)

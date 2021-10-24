@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Room
 import java.util.concurrent.Executors
 
+
 class ProductRepository private constructor(context: Context) {
 
     private val database: ProductDatabase = Room.databaseBuilder(
@@ -18,6 +19,7 @@ class ProductRepository private constructor(context: Context) {
     private val executor = Executors.newSingleThreadExecutor()
 
     fun getAllProducts(): LiveData<List<Product>> = productDao.getAllProducts()
+//    fun getOneProducts(id: Long): LiveData<List<Product>> = productDao.getAnyProduct(id)
 
     fun insert(product: Product) {
         executor.execute {

@@ -9,11 +9,7 @@
         android:id="@+id/loginFragment"
         android:name="com.mzheng9.kotlin_fleamarket.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_productDisplayFragment"
-            app:destination="@id/productDisplayFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.mzheng9.kotlin_fleamarket.HomeFragment"
@@ -22,6 +18,9 @@
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_productDisplayFragment"
+            app:destination="@id/productDisplayFragment" />
     </fragment>
     <fragment
         android:id="@+id/productDisplayFragment"

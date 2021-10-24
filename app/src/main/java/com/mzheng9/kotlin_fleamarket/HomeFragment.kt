@@ -24,6 +24,9 @@ class HomeFragment : Fragment() {
             loginBtn.setOnClickListener {
                 findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
             }
+            browseButton.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_productDisplayFragment)
+            }
 
         }
         return fragmentHomeBinding.root
